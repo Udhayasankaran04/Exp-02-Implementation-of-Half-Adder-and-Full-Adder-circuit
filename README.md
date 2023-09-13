@@ -80,8 +80,10 @@ endmodule
 ![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/01ddd65f-59a7-4d88-9d87-60f1758b84c2)
 
 ### TRUTH TABLE 
+
 ## HALF ADDER
 ![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/2dde3c58-5e20-44c9-bbfc-ce46eba30194)
+
 ## FULL ADDER
 ![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/a3f9d699-5ff7-4826-9871-7a25aebdbbfe)
 ### Result:
