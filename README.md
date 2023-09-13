@@ -45,10 +45,44 @@ Logic symbol & Truthtable
 RTL realization
 
 ### Output:
+```
+
+Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
+Developed by: UDHAYA SANKARAN M
+RegisterNumber:212222110051 
+
+HALF ADDER
+
+module HALF_SUB(a,b,diff,borr)
+input a,b;
+output diff,borr;
+assign diff=(a^b)
+assign borr=a((~a)&b);
+end module;
+
+
+FULL ADDER
+module FULL_SUB (a,b,bin,diff,borr);
+input a,b,bin;
+output diff,borr;
+assign diff=a^b^bin;
+assign borr=((~a)&b)|(b&bin)|((~a)&bin);
+endmodule
+```
 ### RTL
+## HAL FADDER
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/a8768892-3ccf-4e3b-b790-a978bbd832cd)
+## FULL ADDER
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/fc8d841d-9194-4bb8-9b96-cb08bcb0e620)
 ### TIMING DIAGRAM
-
-
+## HALF ADDER
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/99ebee49-3b94-4bb0-8f33-c301305e67d7)
+## FULL ADDER
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/fa298eab-f76e-4f19-a521-241c16ec0c5f)
 ### TRUTH TABLE 
-
+## HALF ADDER
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/722abb14-b900-47dc-9913-363e96c06e48)
+## FULL ADDER
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/eb0d17b3-e1ee-4dfc-b508-47bf02f876a7)
 ### Result:
+Thus the different digital IC's are studied and the truth table for different logic gates are verified.
