@@ -49,40 +49,40 @@ RTL realization
 
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 Developed by: UDHAYA SANKARAN M
-RegisterNumber:212222110051 
-
-HALF ADDER
-
-module HALF_SUB(a,b,diff,borr)
+RegisterNumber:212222110051
+## HALF ADDER
+module DE_EX_03(a,b,sum,carry);
 input a,b;
-output diff,borr;
-assign diff=(a^b)
-assign borr=a((~a)&b);
-end module;
+output sum,carry;
+assign sum=a^b^c;
+assign carry=(a&b)|(a^b)&cin);
+endmodule
 
-
-FULL ADDER
-module FULL_SUB (a,b,bin,diff,borr);
-input a,b,bin;
-output diff,borr;
-assign diff=a^b^bin;
-assign borr=((~a)&b)|(b&bin)|((~a)&bin);
+## FULL ADDER
+module DE_EX_035(a,b,sum,carry);
+input(a,b,c);
+output(sum,carry);
+assign sum=a^b^c;
+assign carry=(a&B)|((a^b)&cin);
 endmodule
 ```
 ### RTL
-## HAL FADDER
-![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/a8768892-3ccf-4e3b-b790-a978bbd832cd)
+## HALF ADDER
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/a930e9a0-687f-49b5-83f9-79a45964d66d)
+
 ## FULL ADDER
-![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/fc8d841d-9194-4bb8-9b96-cb08bcb0e620)
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/1dbc3676-604f-4ff0-a2fd-0d4c1de37ed2)
+
 ### TIMING DIAGRAM
 ## HALF ADDER
-![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/99ebee49-3b94-4bb0-8f33-c301305e67d7)
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/62bf3486-a98e-4710-98e3-b93047c7fbfe)
 ## FULL ADDER
-![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/fa298eab-f76e-4f19-a521-241c16ec0c5f)
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/01ddd65f-59a7-4d88-9d87-60f1758b84c2)
+
 ### TRUTH TABLE 
 ## HALF ADDER
-![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/722abb14-b900-47dc-9913-363e96c06e48)
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/2dde3c58-5e20-44c9-bbfc-ce46eba30194)
 ## FULL ADDER
-![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/eb0d17b3-e1ee-4dfc-b508-47bf02f876a7)
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/a3f9d699-5ff7-4826-9871-7a25aebdbbfe)
 ### Result:
 Thus the different digital IC's are studied and the truth table for different logic gates are verified.
