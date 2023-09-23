@@ -1,4 +1,4 @@
-# Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit
+# Exp-03-Implementation-of-Half-Adder-and-Full-Adder-circuit
 
 # Implementation-of-Half-Adder-and-Full-Adder-circuit
 ### AIM:
@@ -54,24 +54,26 @@ RegisterNumber:212222110051
 module DE_EX_03(a,b,sum,carry);
 input a,b;
 output sum,carry;
-assign sum=a^b^c;
-assign carry=(a&b)|(a^b)&cin);
+xor(sum,a,b);
+and(carry,a,b);
 endmodule
 
 ## FULL ADDER
-module DE_EX_035(a,b,sum,carry);
-input(a,b,c);
-output(sum,carry);
-assign sum=a^b^c;
-assign carry=(a&B)|((a^b)&cin);
+module DE_EX_035(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum = ((a^b)^c);
+assign carry = ((a&b)|(b&c)|(c&a));
 endmodule
 ```
 ### RTL
 ## HALF ADDER
-![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/a930e9a0-687f-49b5-83f9-79a45964d66d)
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/7a95a590-68fa-4cb9-83d3-982429375929)
+
 
 ## FULL ADDER
-![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/1dbc3676-604f-4ff0-a2fd-0d4c1de37ed2)
+![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/39628a82-7ce0-40c0-8e05-d5b91bb27e79)
+
 
 ### TIMING DIAGRAM
 ## HALF ADDER
@@ -80,7 +82,6 @@ endmodule
 ![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/01ddd65f-59a7-4d88-9d87-60f1758b84c2)
 
 ### TRUTH TABLE 
-
 
 ## HALF ADDER
 ![image](https://github.com/Udhayasankaran04/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/119393933/2dde3c58-5e20-44c9-bbfc-ce46eba30194)
