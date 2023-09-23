@@ -45,20 +45,23 @@ Logic symbol & Truthtable
 RTL realization
 
 ### Output:
-```
+
 
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 Developed by: UDHAYA SANKARAN M
 RegisterNumber:212222110051
+
 ## HALF ADDER
+```
 module DE_EX_03(a,b,sum,carry);
 input a,b;
 output sum,carry;
 xor(sum,a,b);
 and(carry,a,b);
 endmodule
-
+```
 ## FULL ADDER
+```
 module DE_EX_035(a,b,c,sum,carry);
 input a,b,c;
 output sum,carry;
